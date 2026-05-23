@@ -63,7 +63,11 @@ If you are unfamiliar with how to create a fork or how forks work, refer to the 
 GitHub makes it easy to add, edit, or delete individual files via their website's link:https://help.github.com/articles/editing-files-in-your-repository/[File Editor].
 The advantage of using the file editor is that GitHub will automatically fork (if needed), push the changes to a branch, and open a PR for you.
 It also means you don't need to have a local clone of your fork.
-The disadvantages are that you can't verify your changes locally before creating the PR, it only works on one file at a time, and your changes are lost if you close or navigate away from the page.
+The disadvantages are:
+
+* You can't verify changes locally before creating the PR.
+* It only works on one file at a time.
+* Your changes are lost if you close or navigate away from the page.
 
 === Using a local clone
 
@@ -380,11 +384,11 @@ Make sure you use the correct terminology from the link:https://www.jenkins.io/d
 We have been working on updating the terminology throughout Jenkins documentation to align with the link:https://www.jenkins.io/sigs/advocacy-and-outreach/#inclusive-naming[inclusive naming initiative].
 
 IMPORTANT: There are *necessary* exceptions in the documentation, such as internal class names that have been retained for compatibility and UI labels that have not been updated yet.
-For example, the changelog for link:https://jenkins.io/changelog/#v2.396[Jenkins weekly 2.396] includes a bug fix with a such an exception.
+For example, the changelog for link:https://jenkins.io/changelog/#v2.396[Jenkins weekly 2.396] includes a bug fix with such an exception.
 
 ==== Adding a Solution page
 
-Solution pages are somewhat *special* because they are generally not AsciiDoc files, but rather link:http://haml.info[Haml] templates.
+Solution pages are somewhat *special* because they are generally not AsciiDoc files, but rather link:https://haml.info[Haml] templates.
 All the solution pages are located in the link:content/solutions[`content/solutions/`] directory hierarchy, with some data provided for the solution pages in link:content/_data/solutions[`content/_data/solutions/`].
 
 IMPORTANT: The naming of a solution page template (`pipeline.html.haml`) must match the data file in `content/_data/solutions`, e.g. `pipeline.yml`
@@ -521,8 +525,8 @@ Encouraged formats:
 
 * link:https://asciidoctor.org[Asciidoctor] for basic content creation.
 ** link:https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc syntax quick reference]
-* link:http://haml.info[Haml] for more advanced/custom page creation.
-** link:http://haml.info/docs/yardoc/file.REFERENCE.html[Haml syntax reference]
+* link:https://haml.info[Haml] for more advanced/custom page creation.
+** link:https://haml.info/docs/yardoc/file.REFERENCE.html[Haml syntax reference]
 
 Adding a new page is as easy as adding a new file to the link:content/[`content/`] directory.
 Remember that the filename you choose *will be the URL of your page*, so ensure you have a *lowercase* and useful filename.
